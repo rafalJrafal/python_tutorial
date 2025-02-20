@@ -15,3 +15,5 @@ print("Int ", type(varStr))
 varInt = 5
 varStr = str(varInt)
 print("str(int) ", type(varStr))
+
+print(hex(723))
