@@ -1,0 +1,12 @@
+digraph list {
+fontname=Arial;
+fontsize=10;
+label=machine;
+rankdir=LR;
+i [fillcolor=black, fixedsize=true, fontsize=1, height=0.2, shape=circle, style=filled, width=0.2];
+i -> init  [color=blue, fontname=Arial, fontsize=9, label=""];
+init [fillcolor=turquoise, fontname=Arial, fontsize=10, label=Init, penwidth=2, peripheries=1, shape=rectangle, style="rounded, filled"];
+init -> running  [color=blue, fontname=Arial, fontsize=9, label=run];
+running [fillcolor=white, fontname=Arial, fontsize=10, label="Running\nentry / startRunning\nexit / stopRunning", peripheries=1, shape=rectangle, style="rounded, filled"];
+running -> init  [color=blue, fontname=Arial, fontsize=9, label=stop];
+}
