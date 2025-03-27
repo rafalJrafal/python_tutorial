@@ -6,4 +6,3 @@ foundVal = re.search("rain", txt)
 
 print(foundVal)
 
-print(foundVal.span)
